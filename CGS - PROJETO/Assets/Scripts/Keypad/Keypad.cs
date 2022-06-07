@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Keypad : MonoBehaviour
@@ -22,7 +24,9 @@ public class Keypad : MonoBehaviour
 
     public void Execute()
     {
-        if(Ans.text == Answer)
+        
+
+        if (Ans.text == Answer)
         {
             Ans.text = "CORRECT";
             DoorOpen.Play();
@@ -33,13 +37,25 @@ public class Keypad : MonoBehaviour
         }
         else
         {
-            Ans.text = "";
+            Ans.text = "WRONG CODE";
             WrongCode.Play();
 
+
+            StartCoroutine(GameOver());
+
+
+
         }
-        
+
     }
-    
+
+    private IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("GAMEOVER");
+
+    }
+
     IEnumerator StopDoor()
     {
         yield return new WaitForSeconds(0.5f);
@@ -53,6 +69,7 @@ public class Keypad : MonoBehaviour
         {
             isVisible = true;
             gameObject.SetActive(true);
+            Debug.Log("funciona");
         }
 
     }
