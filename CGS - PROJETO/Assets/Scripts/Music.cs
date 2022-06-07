@@ -17,8 +17,5 @@ public class Music : MonoBehaviour
         _audioSource.Play();
     }
 
-    public void StopMusic()
-    {
-        _audioSource.Stop();
-    }
+    
 }
