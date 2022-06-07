@@ -13,7 +13,7 @@ public class Interact : MonoBehaviour
     public GameObject alert;
     void Start()
     {
-       
+        Cursor.visible = false;
     }
 
     // Update is called once per frame

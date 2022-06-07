@@ -1186,6 +1186,10 @@ PrefabInstance:
       propertyPath: VisaoLocal
       value: 
       objectReference: {fileID: 1961454325}
+    - target: {fileID: 1018881253552547233, guid: bd586c23e08d21044bba7f6e48fae159, type: 3}
+      propertyPath: ZombieSound
+      value: 
+      objectReference: {fileID: 88440763}
     - target: {fileID: 1018881253552547234, guid: bd586c23e08d21044bba7f6e48fae159, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1204,7 +1208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1018881253552547234, guid: bd586c23e08d21044bba7f6e48fae159, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.04760278
+      value: 0.056198083
       objectReference: {fileID: 0}
     - target: {fileID: 1018881253552547234, guid: bd586c23e08d21044bba7f6e48fae159, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1212,7 +1216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1018881253552547234, guid: bd586c23e08d21044bba7f6e48fae159, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9988664
+      value: 0.9984197
       objectReference: {fileID: 0}
     - target: {fileID: 1018881253552547234, guid: bd586c23e08d21044bba7f6e48fae159, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1224,7 +1228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1018881253552547234, guid: bd586c23e08d21044bba7f6e48fae159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 185.457
+      value: 173.557
       objectReference: {fileID: 0}
     - target: {fileID: 1018881253552547234, guid: bd586c23e08d21044bba7f6e48fae159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1460,7 +1464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombie: {fileID: 328230542}
-  ZombieSound: {fileID: 88440763}
 --- !u!65 &1051048183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1505,7 +1508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6434611487481185011, guid: 39a6e85319f8e3a40b4e70c72bdbf37f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.19
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 6434611487481185011, guid: 39a6e85319f8e3a40b4e70c72bdbf37f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1513,7 +1516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6434611487481185011, guid: 39a6e85319f8e3a40b4e70c72bdbf37f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.11
+      value: 10.11
       objectReference: {fileID: 0}
     - target: {fileID: 6434611487481185011, guid: 39a6e85319f8e3a40b4e70c72bdbf37f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1610,7 +1613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5f66320149aeb146a1779d135589c5e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9784449
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5f66320149aeb146a1779d135589c5e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1618,7 +1621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5f66320149aeb146a1779d135589c5e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.20650814
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5f66320149aeb146a1779d135589c5e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1630,7 +1633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5f66320149aeb146a1779d135589c5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -205.881
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d5f66320149aeb146a1779d135589c5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2580,7 +2583,7 @@ MeshCollider:
   m_GameObject: {fileID: 1918700625}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30

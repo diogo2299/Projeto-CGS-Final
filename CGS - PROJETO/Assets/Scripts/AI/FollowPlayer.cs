@@ -9,6 +9,7 @@ public class FollowPlayer : MonoBehaviour
     public NavMeshAgent Agent;
     public bool Seguir;
     public float WaitTime;
+    public AudioSource ZombieSound;
 
     Animator animator;
 
@@ -20,7 +21,7 @@ public class FollowPlayer : MonoBehaviour
 
     private void Start()
     {
-        Cursor.visible = false;
+       
         
         animator = GetComponent<Animator>();
     }
@@ -33,6 +34,7 @@ public class FollowPlayer : MonoBehaviour
         if (Seguir == true)
         {
             WaitTime = 0;
+            ZombieSound.Play();
         }
         else
         {
@@ -44,27 +46,8 @@ public class FollowPlayer : MonoBehaviour
 
         if (WaitTime <= 2)
         {
-           // RaycastHit Hit = new RaycastHit();
-         //   VisaoLocal.LookAt(GameObject.FindWithTag("Player").transform.position);
-        //    if (Physics.Raycast(VisaoLocal.position, VisaoLocal.forward, out Hit, 500, Layoso, QueryTriggerInteraction.Ignore))
-         //   {
-         //       Debug.DrawLine(VisaoLocal.position, Hit.point, Color.green);
-          //      if (Hit.transform.gameObject.tag == "Player")
-            //    {
+
                     Agent.destination = GameObject.FindWithTag("Player").transform.position;
-             //       LastPos = GameObject.FindWithTag("Player").transform.position; 
-            //    }
-            //    else
-            //    {
-            //        if (Agent.destination != LastPos)
-            //            Agent.destination = LastPos;
-            //    }
-            //}
-            //else
-            //{
-            //    if (Agent.destination != LastPos)
-            //        Agent.destination = LastPos;
-          //  }
 
             
         }
