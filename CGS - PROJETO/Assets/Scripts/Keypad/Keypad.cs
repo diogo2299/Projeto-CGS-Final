@@ -53,6 +53,7 @@ public class Keypad : MonoBehaviour
         {
             isVisible = true;
             gameObject.SetActive(true);
+            Debug.Log("funciona");
         }
 
     }
