@@ -8,8 +8,11 @@ public class End : MonoBehaviour
     // Start is called before the first frame update
     public void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("Win");
-        Cursor.visible = true;
-        Screen.lockCursor = false;
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene("Win");
+            Cursor.visible = true;
+            Screen.lockCursor = false;
+        }
     }
 }
