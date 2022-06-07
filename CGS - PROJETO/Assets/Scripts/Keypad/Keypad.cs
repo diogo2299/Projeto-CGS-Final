@@ -24,7 +24,7 @@ public class Keypad : MonoBehaviour
 
     public void Execute()
     {
-        StartCoroutine(GameOver());
+        
 
         if (Ans.text == Answer)
         {
@@ -41,7 +41,7 @@ public class Keypad : MonoBehaviour
             WrongCode.Play();
 
 
-            GameOver();
+            StartCoroutine(GameOver());
 
 
 
